@@ -9,11 +9,12 @@
 
 - 윤성우의 열혈 자료구조
 - [파이썬 알고리즘 인터뷰](https://github.com/Cho-D-YoungRae/AlgorithmStudy/tree/main/leetcode)
+- [이것이 코딩 테스트다](books/이것이_코딩_테스트다.md)
 
 ## JAVA
 
 - 명품 JAVA Programming
-- [윤성우의 열혈 Java 프로그래밍]
+- 윤성우의 열혈 Java 프로그래밍
 
 ## Python
 
