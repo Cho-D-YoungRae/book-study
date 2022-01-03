@@ -2,4 +2,5 @@
 
 > [github](https://github.com/WegraLee/effective-java-3e-source-code)
 
-- [ ] 2022/01/03 ~ ing
+- [ ] 2022/01/03 ~ ing - STOP
+  - 난이도가 어려워 조금 더 공부 후 구매해서 천천히 읽는 것이 좋을 듯
