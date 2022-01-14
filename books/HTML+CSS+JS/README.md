@@ -9,3 +9,4 @@
 - [Chapter 3. 실무에서 자주 사용하는 HTML 필수](Chapter3.md)
 - [Chapter 4. 웹 스타일링을 위한 CSS 기초 배우기](Chapter4.md)
 - [Chapter 5. CSS 선택자 다루기](Chapter5.md)
+- [Chapter 6. CSS 필수 속성 다루기](Chapter6.md)
