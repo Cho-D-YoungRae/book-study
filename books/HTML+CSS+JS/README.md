@@ -13,3 +13,4 @@
 - [Chapter 7. 효과적인 레이아웃을 위한 CSS 속성](Chapter7.md)
 - [Chapter 8. 자바스크립트 시작하기](Chapter8.md)
 - [Chapter 9. 자바스크립트 기초 문법](Chapter9.md)
+- [Chapter 10. 자바스크립트 함수](Chapter10.md)
