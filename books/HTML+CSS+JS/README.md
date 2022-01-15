@@ -10,4 +10,6 @@
 - [Chapter 4. 웹 스타일링을 위한 CSS 기초 배우기](Chapter4.md)
 - [Chapter 5. CSS 선택자 다루기](Chapter5.md)
 - [Chapter 6. CSS 필수 속성 다루기](Chapter6.md)
-- [Chapter 7. 효과적인 레이아웃을 위한 CSS 속성]
+- [Chapter 7. 효과적인 레이아웃을 위한 CSS 속성](Chapter7.md)
+- [Chapter 8. 자바스크립트 시작하기](Chapter8.md)
+- [Chapter 9. 자바스크립트 기초 문법](Chapter9.md)
