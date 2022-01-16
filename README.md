@@ -1,9 +1,10 @@
 # book-study
 
-> Book study note
+> 공부했던 교재 목록 정리.
 
-읽었던 교재 목록이 아래에 있습니다. 이 중 내용을 정리했던 것은 링크로 연결되어 있습니다.
+## Programming
 
+- [객체지향의 사실과 오해](./객체지향의_사실과_오해/README.md)
 
 ## Algorithm
 
