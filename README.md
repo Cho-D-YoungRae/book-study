@@ -17,6 +17,7 @@
 - 명품 JAVA Programming
 - 윤성우의 열혈 Java 프로그래밍
 - [자바의 정석](books/자바의_정석/README.md)
+- [모던 자바 인 액션](books/모던_자바_인_액션/README.md)
 
 ### Coding Skills
 
