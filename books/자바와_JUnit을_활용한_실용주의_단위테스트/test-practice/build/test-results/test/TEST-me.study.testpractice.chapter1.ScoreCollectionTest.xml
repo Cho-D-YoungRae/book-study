@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.study.testpractice.chapter1.ScoreCollectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-03T04:53:26" hostname="joyeonglaeui-MacBookPro.local" time="0.062">
+  <properties/>
+  <testcase name="answerArithmeticMeanOfTwoNumbers()" classname="me.study.testpractice.chapter1.ScoreCollectionTest" time="0.062"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
