@@ -1,4 +1,4 @@
-package me.study.testpractice.chapter1;
+package me.study.testpractice.iloveyouboss;
 
 import org.junit.jupiter.api.Test;
 

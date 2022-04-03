@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.study.testpractice.iloveyouboss.ProfileTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-03T07:08:06" hostname="joyeonglaeui-MacBookPro.local" time="0.081">
+  <properties/>
+  <testcase name="matchAnswersTrueForAnyDontCareCriteria()" classname="me.study.testpractice.iloveyouboss.ProfileTest" time="0.077"/>
+  <testcase name="matchAnswersFalseWhenMustMatchCriteriaNotMet()" classname="me.study.testpractice.iloveyouboss.ProfileTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
