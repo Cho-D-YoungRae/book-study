@@ -50,6 +50,7 @@
 ## Database
 
 - 이것이 MySQL이다
+- [Real MySQL 8.0](./books/Real_MySQL/README.md)
 
 ## git
 
@@ -78,5 +79,5 @@
 ## HTML+CSS+JS
 
 - 생활코딩! HTML+CSS+자바스크립트
-- HTML+CSS+JS
+- 코딩 자율학습 HTML+CSS+자바스크립트
   - 베타리딩
