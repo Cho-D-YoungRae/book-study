@@ -52,6 +52,10 @@
 - 이것이 MySQL이다
 - [Real MySQL 8.0](./books/Real_MySQL/README.md)
 
+## AWS
+
+- [당신이 지금 알아야할 AWS](./books/당신이_지금_알아야할_AWS/README.md)
+
 ## git
 
 - Doit! 지옥에서 온 문서 관리자 깃 & 깃허브 입문
