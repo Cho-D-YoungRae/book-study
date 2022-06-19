@@ -4,8 +4,7 @@
 
 ## Programming
 
-- [객체지향의 사실과 오해](./books/객체지향의_사실과_오해/README.md)
-- [클릭 코드](./books/클린_코드/README.md)
+- [클린 코드](./books/클린_코드/README.md)
 
 ## Algorithm
 
@@ -22,8 +21,6 @@
 - [이펙티브 자바 (Effective Java 3/E)](./books/이펙티브_자바_3E/README.md)
 
 ## Kotlin
-
-- [코틀린 완벽 가이드](./books/이펙티브_자바_3E/README.md)
 
 ## Python
 
