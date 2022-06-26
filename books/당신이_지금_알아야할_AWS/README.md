@@ -5,3 +5,4 @@
 ## Contents
 
 1. [쉽게 시작하는 클라우드](chapter1.md)
+2. [AWS 서비스와 선택](chapter2.md)
