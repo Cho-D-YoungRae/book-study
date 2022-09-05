@@ -8,7 +8,7 @@
 
 1. [들어가며](chapter1.md)
 2. [빨리 시작해보기](chapter2.md)
-3. NoSQL
+3. [NoSQL](chapter3.md)
 4. 레디스 시작
 5. 레디스 클라이언트
 6. 레디스 내부구조
