@@ -9,7 +9,7 @@ import redis.clients.jedis.Pipeline;
  */
 public class PipelineTest {
 
-    public static final int TOTAL_OPERATIONS = 10_000_000;
+    public static final int TOTAL_OPERATIONS = 1_000_000;
 
     public static void main(String[] args) {
         Jedis jedis = new Jedis("127.0.0.1", 6379);

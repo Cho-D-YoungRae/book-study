@@ -1,0 +1,62 @@
+# Chapter 6. 레디스 내부구조
+
+- [practice code](thisisredis-practice/src/main/java/com/example/thisisredispractice/ch6/)
+
+## 6.1 레디스 객체
+
+- 레디스는 저장된 데이터를 관리하기 위하여 redisObject 객체를 사용
+
+```c
+typedef struct redisObject {
+    unsigned type:4;        // 레디스에 저장된 객체의 데이터형
+    unsigned notused:2;     // 사용되지 않는 필드
+    unsigned encoding:4;    // 레디스 객체에 저장된 데이터의 인코딩 타입
+    unsigned lru:22;        // 저장된 데이터의 LRU(Least Recently Used) 시간 정보
+    int refcount;           // 이 객체가 참조된 횟수 정보
+    void *ptr;              // 실제 데이터가 저장된 위치 정보를 가르키는 포인터
+}
+```
+
+### 6.1.1 레디스 인코딩
+
+#### 문자열 인코딩
+
+- 레디스는 문자열을 저장하기 위해 2 가지 인코딩을 사용
+  - `REDIS_ENCODING_RAW`: 전혀 가공되지 않은 원본 데이터
+  - `REDIS_ENCODING_INT`: 숫자 데이터 인코딩
+- 레디스는 10000보다 작은 숫자를 미리 공유객체 상수로 등록해두어 같은 객체를 재사용
+- 10000보다 크더라도 long범위 안에 포함되는 숫자면 `REDIS_ENCODING_INT` 인코딩을 사용하여 저장하기 때문에 더 효율적인 메모리 사용
+
+#### 리스트 데이터 인코딩
+
+- 레디스는 리스트 데이터형을 저장하기 위해 2 가지 인코딩 타입을 지원
+  - `REDIS_ENCODING_ZIPLIST`: 리스트 데이터를 저장할 때 더 적은 메모리를 사용할 수 있음. 더 많은 CPU 사용
+  - `REDIS_ENCODING_LINKEDLIST`: 일반 연결 리스트 구조와 동일
+
+#### 셋 데이터 인코딩
+
+- 셋 데이터는 O(1)의 시간 복잡도를 제공하기 위하여 내부적으로 해시 테이블 구조로 구현
+- `REDIS_ENCODING_INTSET`: 메모리를 절약하기 위한 특별 인코딩
+- `REDIS_ENCODING_HT`: 셋 데이터의 기본 인코딩
+
+## 6.2 레디스 문자열
+
+```c
+struct sdshdr {
+    int len;        // 저장된 문자열의 길이가 저장되는 필드
+    int free;       // 할당된 버퍼의 남은 길이가 저장되는 필드
+    char buf[];     // 문자열 데이터가 저장되는 필드
+}
+```
+
+## 6.3 레디스 공유 객체
+
+- 레디스는 자주 사용되는 값을 전역 변수인 공유 객체에 저장해두고 사용
+- 공유객체에 포함되는 값의 종류
+  - 에러 메시지
+  - 프로토콜을 위한 문자열
+  - 자주 사용되는 문자열
+  - 0~9999 숫자
+- `REDIS_SHARED_INTEGERS`
+  - 미리 등록하고자 하는 숫자의 개수를 지정 -> 10000으로 지정되어 있음
+  - 값을 크게 잡을 수록 공유객체를 할당하는 데 메모리가 더 필요
