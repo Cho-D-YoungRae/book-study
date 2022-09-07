@@ -1,4 +1,4 @@
-package com.example.thisisredispractice.ch7;
+package com.example.thisisredispractice.ch7.redislogger;
 
 
 import com.example.thisisredispractice.JedisHelper;
