@@ -1,7 +1,5 @@
 # Chapter 6. 레디스 내부구조
 
-- [practice code](thisisredis-practice/src/main/java/com/example/thisisredispractice/ch6/)
-
 ## 6.1 레디스 객체
 
 - 레디스는 저장된 데이터를 관리하기 위하여 redisObject 객체를 사용
