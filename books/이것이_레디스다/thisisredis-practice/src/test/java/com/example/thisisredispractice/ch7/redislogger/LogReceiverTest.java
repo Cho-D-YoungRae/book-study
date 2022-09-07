@@ -1,6 +1,7 @@
-package com.example.thisisredispractice.ch7;
+package com.example.thisisredispractice.ch7.redislogger;
 
 import com.example.thisisredispractice.JedisHelper;
+import com.example.thisisredispractice.ch7.redislogger.LogReceiver;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
