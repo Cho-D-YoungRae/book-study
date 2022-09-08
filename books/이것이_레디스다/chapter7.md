@@ -46,3 +46,10 @@
 - 단일 명령어를 여러 번에 나누어 전송하는 것은 불필요한 네트워크 왕복 시간 포함
   - pipeline 등 이용
 
+## 7.4 '좋아요' 처리하기
+
+> [practice code](thisisredis-practice/src/main/java/com/example/thisisredispractice/ch7/like)
+
+### 7.4.5 더 살펴볼 내용
+
+`getLikeCountList()` 메서드의 구현을 보면 파이프라인을 통해서 게시물 개수와 동일한 횟수의 scard 명령을 호출한다. 하지만 파이프라인으로 명령하더라도 속도의 한계가 있기 때문에 한 화면에 출력하는 게시물 수를 조절하는 등으로 속도 문제를 해결할 수 있다.
