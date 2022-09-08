@@ -57,3 +57,7 @@
 ## 7.5 실시간 순 방문자 집계
 
 > [practice code](thisisredis-practice/src/main/java/com/example/thisisredispractice/ch7/uniquevisit)
+
+## 7.6 최근 조회 상품 목록
+
+> [practice code](thisisredis-practice/src/main/java/com/example/thisisredispractice/ch7/recentview)
