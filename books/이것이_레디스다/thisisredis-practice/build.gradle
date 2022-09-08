@@ -23,6 +23,8 @@ dependencies {
 
     implementation 'redis.clients:jedis'
 
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
