@@ -53,3 +53,7 @@
 ### 7.4.5 더 살펴볼 내용
 
 `getLikeCountList()` 메서드의 구현을 보면 파이프라인을 통해서 게시물 개수와 동일한 횟수의 scard 명령을 호출한다. 하지만 파이프라인으로 명령하더라도 속도의 한계가 있기 때문에 한 화면에 출력하는 게시물 수를 조절하는 등으로 속도 문제를 해결할 수 있다.
+
+## 7.5 실시간 순 방문자 집계
+
+> [practice code](thisisredis-practice/src/main/java/com/example/thisisredispractice/ch7/uniquevisit)
