@@ -9,7 +9,7 @@
 
 1. [Vue.js는 무엇인가?](chapter1.md)
 2. 개발환경 구성(vs code, node, npm)
-3. Vue CLI로 Vue 프로젝트 생성하기
+3. [Vue CLI로 Vue 프로젝트 생성하기](chapter3.md)
 4. Vue Router 설정
 5. 컴포넌트 Basic
 6. Mock 서버 준비하기
