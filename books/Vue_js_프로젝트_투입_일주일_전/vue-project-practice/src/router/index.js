@@ -126,6 +126,11 @@ const routes = [
     name: 'Watch2',
     component: () => import( /* webpackChunkName: "watch2" */ '../views/Watch2.vue')
   },
+  {
+    path: '/databindinglist2',
+    name: 'DataBindingList2',
+    component: () => import( /* webpackChunkName: "databindinglist2" */ '../views/DataBindingList2.vue')
+  },
 ]
 
 const router = createRouter({
