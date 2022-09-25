@@ -17,7 +17,7 @@
 8. [컴포넌트 심화 학습](chapter8.md)
 9. [Reusability & Composition](chapter9.md)
 10. Proxy 사용하기
-11. Vuex(v4.x)
+11. [Vuex(v4.x)](chapter11.md)
 12. 프로젝트 배포하기
 13. 미니프로젝트: 로그인 처리
 14. 미니프로젝트: 제품 판매 웹앱 구현
