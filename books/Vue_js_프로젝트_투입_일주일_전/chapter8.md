@@ -171,3 +171,40 @@ export default {
 > [ChildComponent5](vue-project-practice/src/views/ChildComponent5.vue)
 
 - 부모 컴포넌트에서 `computed`를 이용하면 자식 컴포넌트에 정의된 데이터 옵션 값의 변경 사항을 항상 동기화시킬 수 있습니다.
+
+## 8.2 Slot
+
+> [SlotModalLayout](vue-project-practice/src/views/SlotModalLayout.vue)   
+> [ChildComponent5](vue-project-practice/src/views/ChildComponent5.vue)
+
+- `slot`은 컴포넌트 내에서 다른 컴포넌트를 사용할 때 쓰는 컴포넌트의 마크업을 재정의하거나 확장하는 기능
+- 컴포넌트의 재활용성을 높여주는 기능
+- name 을 지정해서 사용하는 Slot 을 Named Slots 라고 함
+  - `v-slot:(slot 이름)` 디렉티브를 사용해서 동일한 이름의 slot 위치로 html 코드가 삽입
+  - name 이 없는 slot 은 `v-slot:default`로 지정
+- 컴포넌트 내에 여러 영역에 slot 을 적용할 때는 name 을 이용하고, 하나의 영역에만 적용할 때는 굳이 slot 에 name 을 사용하지 않아도 됨
+- `v-slot:` 대신에 단축어로 `#`을 사용할 수 있음
+
+## 8.3 Provide/Inject
+
+> [ProvideInject](vue-project-practice/src/views/ProvideInject.vue)   
+> [ProvideInjectChild](vue-project-practice/src/views/ProvideInjectChild.vue)
+
+- 컴포넌트의 계층 구조가 복잡하게 얽혀 있으면 props 를 통해 데이터를 전달하는 것은 굉장히 복잡한 코드를 양산하게 됨
+- 이러한 경우 `Provide/Inject` 를 사용할 수 있음
+- 부모 컴포넌트에서 `provide`, 자식 컴포넌트에서 `inject`
+- `inject`를 통해서 데이터를 전달받는 자식 컴포넌트에서는 전달받는 데이터가 어떤 부모 컴포넌트에서 전달되는지 확인이 안 된다는 단점
+
+## 8.4 Template refs
+
+- HTML 객체에 바로 접근해야 한다면 HTML 태그에 id 대신 ref 사용
+
+```vue
+<template>
+  <input type="text" ref="title"/>
+</template>
+```
+
+```javascript
+this.$refs.title.focus();
+```
