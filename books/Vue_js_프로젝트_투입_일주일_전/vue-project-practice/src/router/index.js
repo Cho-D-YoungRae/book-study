@@ -171,6 +171,41 @@ const routes = [
     name: 'ProvideInject',
     component: () => import( /* webpackChunkName: "provideinject" */ '../views/ProvideInject.vue')
   },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: () => import( /* webpackChunkName: "calculator" */ '../views/Calculator.vue')
+  },
+  {
+    path: '/compositionapi',
+    name: 'CompositionAPI',
+    component: () => import( /* webpackChunkName: "compositionapi" */ '../views/CompositionAPI.vue')
+  },
+  {
+    path: '/compositionapi2',
+    name: 'CompositionAPI2',
+    component: () => import( /* webpackChunkName: "compositionapi2" */ '../views/CompositionAPI2.vue')
+  },
+  {
+    path: '/compositionapi3',
+    name: 'CompositionAPI3',
+    component: () => import( /* webpackChunkName: "compositionapi3" */ '../views/CompositionAPI3.vue')
+  },
+  {
+    path: '/compositionapi4',
+    name: 'CompositionAPI4',
+    component: () => import( /* webpackChunkName: "compositionapi4" */ '../views/CompositionAPI4.vue')
+  },
+  {
+    path: '/compositionapiprovide',
+    name: 'CompositionAPIProvide',
+    component: () => import( /* webpackChunkName: "compositionapiprovide" */ '../views/CompositionAPIProvide.vue')
+  },
+  {
+    path: '/mixins',
+    name: 'Mixins',
+    component: () => import( /* webpackChunkName: "mixins" */ '../views/Mixins.vue')
+  },
 ]
 
 const router = createRouter({
