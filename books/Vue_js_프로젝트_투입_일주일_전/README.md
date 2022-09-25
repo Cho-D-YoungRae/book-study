@@ -3,7 +3,7 @@
 > [예제 소스](https://github.com/seungwongo/vue-project)  
 > [미니 프로젝트](https://github.com/seungwongo/mini-project-shop)
 
-- [ ] 2022/09/21 ~ ing
+- [x] 2022/09/21 ~ 2022/09/25 
 
 ## Chapter
 
