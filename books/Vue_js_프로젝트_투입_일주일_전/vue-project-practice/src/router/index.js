@@ -161,6 +161,16 @@ const routes = [
     name: 'ParentComponent5',
     component: () => import( /* webpackChunkName: "parentcomponent5" */ '../views/ParentComponent5.vue')
   },
+  {
+    path: '/slotusemodel',
+    name: 'SlotUseModel',
+    component: () => import( /* webpackChunkName: "slotusemodel" */ '../views/SlotUseModel.vue')
+  },
+  {
+    path: '/provideinject',
+    name: 'ProvideInject',
+    component: () => import( /* webpackChunkName: "provideinject" */ '../views/ProvideInject.vue')
+  },
 ]
 
 const router = createRouter({
