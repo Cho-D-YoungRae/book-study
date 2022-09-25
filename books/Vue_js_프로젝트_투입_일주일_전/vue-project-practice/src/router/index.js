@@ -206,6 +206,11 @@ const routes = [
     name: 'Mixins',
     component: () => import( /* webpackChunkName: "mixins" */ '../views/Mixins.vue')
   },
+  {
+    path: '/storeaccess',
+    name: 'StoreAccess',
+    component: () => import( /* webpackChunkName: "storeaccess" */ '../views/StoreAccess.vue')
+  },
 ]
 
 const router = createRouter({
