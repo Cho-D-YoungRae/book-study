@@ -131,6 +131,36 @@ const routes = [
     name: 'DataBindingList2',
     component: () => import( /* webpackChunkName: "databindinglist2" */ '../views/DataBindingList2.vue')
   },
+  {
+    path: '/nestedcomponent',
+    name: 'NestedComponent',
+    component: () => import( /* webpackChunkName: "nestedcomponent" */ '../views/NestedComponent.vue')
+  },
+  {
+    path: '/parentcomponent',
+    name: 'ParentComponent',
+    component: () => import( /* webpackChunkName: "parentcomponent" */ '../views/ParentComponent.vue')
+  },
+  {
+    path: '/parentcomponent2',
+    name: 'ParentComponent2',
+    component: () => import( /* webpackChunkName: "parentcomponent2" */ '../views/ParentComponent2.vue')
+  },
+  {
+    path: '/parentcomponent3',
+    name: 'ParentComponent3',
+    component: () => import( /* webpackChunkName: "parentcomponent3" */ '../views/ParentComponent3.vue')
+  },
+  {
+    path: '/parentcomponent4',
+    name: 'ParentComponent4',
+    component: () => import( /* webpackChunkName: "parentcomponent4" */ '../views/ParentComponent4.vue')
+  },
+  {
+    path: '/parentcomponent5',
+    name: 'ParentComponent5',
+    component: () => import( /* webpackChunkName: "parentcomponent5" */ '../views/ParentComponent5.vue')
+  },
 ]
 
 const router = createRouter({

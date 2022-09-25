@@ -14,7 +14,7 @@
 5. [컴포넌트 Basic](chapter5.md)
 6. Mock 서버 준비하기
 7. [서버 데이터 바인딩 실습](chapter7.md)
-8. 컴포넌트 심화 학습
+8. [컴포넌트 심화 학습](chapter8.md)
 9. Reusability & Composition
 10. Proxy 사용하기
 11. Vuex(v4.x)
