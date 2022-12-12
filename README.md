@@ -57,9 +57,10 @@
 
 - [당신이 지금 알아야할 AWS](./books/당신이_지금_알아야할_AWS/README.md)
 
-## Network
+## CS
 
 - [윤성우의 열혈 TCP/IP 소켓 프로그래밍](./books/윤성우의_열혈_TCPIP_소켓_프로그래밍/README.md)
+- [면접을 위한 CS 전공지식노트](./books/면접을_위한_CS_전공지식노트/README.md)
 
 ## Vue.js
 
