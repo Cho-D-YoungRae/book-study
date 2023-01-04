@@ -2,4 +2,4 @@
 
 > [github](https://github.com/wnghdcjfe/csnote)
 
-- [ ] 2022/12/12 ~ ing
+- [x] 2022/12/12 ~ 2023/01/04
