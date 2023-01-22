@@ -2,4 +2,4 @@
 
 > [github](https://github.com/Packtpublishing/hands-on-reactive-programming-in-spring-5)
 
-- [ ] 2023/01/21 ~ ing
+- [x] 2023/01/21 ~ 2023/01/22
