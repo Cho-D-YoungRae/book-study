@@ -25,9 +25,10 @@
 
 - [코틀린 완벽 가이드](./books/%EC%BD%94%ED%8B%80%EB%A6%B0_%EC%99%84%EB%B2%BD_%EA%B0%80%EC%9D%B4%EB%93%9C/README.md)
 
-## Spring
+## 리액티브
 
 - [실전! 스프링5를 활용한 리액티브 프로그래밍](./books/실전_스프링5를_활용한_리액티브_프로그래밍/README.md)
+- [RxJava 리액티브 프로그래밍](./books/RxJava_리액티브_프로그래밍/README.md)
 
 ## Python
 
