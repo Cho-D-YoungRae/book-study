@@ -7,3 +7,4 @@
 ## Contents
 
 1. [새로운 인프라 환경이 온다](./chapter01.md)
+2. [테스트 환경 구성하기](./chapter02.md)
