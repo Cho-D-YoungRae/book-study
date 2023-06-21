@@ -95,3 +95,65 @@
 - 컨테이너나 이미지를 삭제하기 전에 먼저 컨테이너를 정지
   - 동일한 호스트의 포트를 사용하는 컨테이너를 배포하거나 작동 중인 컨테이너의 사용 자체를 종료할 떄도 먼제 컨테이너를 정지
 - `docker stop` : 컨테이너 정지
+
+## 4.3 4가지 방법으로 컨테이너 이미지 만들기
+
+### 4.3.1 기본 방법으로 빌드하기
+
+- Dockerfile
+  - `FROM <이미지 이름>:[태그]`
+    - 이미지 가져옴
+    - 가져온 이미지 내부에서 컨테이너 이미지 빌드
+    - 누군가가 만들어 놓은 이미지에 필요한 부분 추가
+  - `LABEL <레이블 이름>=<값>`
+    - 이미지에 부가적인 설명을 위한 레이블을 추가할 때 사용
+  - `EXPOSE <숫자>`
+    - 생성된 이미지로 컨테이너를 구동할 때 어떤 포트를 사용하는지
+    - 이를 사용한다고 해서 컨테이너를 구동할 때 자동으로 해당 포트를 호스트 포트와 연결하지는 않음
+    - 외부와 연결하려면 지정한 포트를 호스트 포트와 연결해야 한다는 정보를 제공할 뿐
+  - `COPY <호스트 경로> <컨테이너 경로>`
+    - 호스트에서 새로 생성하는 컨테이너 이미지로 필요한 파일 복사
+  - `RUN`
+    - 이미지 생성할 때 실행되는 명령
+  - `WORKDIR`
+    - 이미지의 작업 위치 opt 로 변경
+  - `ENTRYPOINT ["명령어", "옵션", ..., "옵션"]`
+    - 컨테이너 구동 시 실행할 명령
+
+### 4.3.2 컨테이너 용량 줄이기
+
+- 기초 이미지를 openjdk에서 gcr.io/distroless/java 로 변경
+- distroless 는 자바 실행을 위해 경량화된 이미지
+- openjdk 이미지에 포함된 자바 개발 도구는 불필요하게 낭비되는 공간
+
+### 4.3.3 컨테이너 내부에서 컨테이너 빌드하기
+
+- `RUN` 명령을 이용해서 컨테이너 내부에서 빌드
+- 컨테이너 내부에서 빌드를 진행하기 때문에 빌드 중간에 생성한 파일들과 내려받은 라이브러리 캐시들이 최종 이미지에 그대로 남음
+- 컨테이너 이미지는 커지면 커질수록 비효율적으로 작동하므로 컨테이너 내부에서 컨테이너를 빌드하는 것은 좋지 않은 방법
+- Dockerfile 하나만 빌드하면 컨테이너가 바로 생성되는 편리함
+
+### 4.3.4 최적화해 컨테이너 빌드하기
+
+- 최종 이미지 용량을 줄일 수 있고, 호스트에 어떠한 빌드 도구도 설치할 필요 없음
+- 멀티 스테이지의 핵심은 빌드하는 위치와 최종 이미지를 **분리**하는 것
+- 이미지 중 \<none> 으로 표시되는 이미지 생성될 수 있음
+  - `댕글링(dangling)` 이미지
+  - 멀티 스테이지 과정에서 자바 소스를 빌드하는 과정 중 생성된 이미지
+  - 공간을 적게 사용하는 이미지를 만드는 것이 목적이므로 댕글링 이미지 삭제 (dangling=true)
+
+```Dockerfile
+FROM openjdk:8 AS int-build
+LABEL description="Java Application builder"
+RUN git clone https://github.com/iac-source/inbuilder.git
+WORKDIR inbuilder
+RUN chmod 700 mvnw
+RUN ./mvnw clean package
+
+FROM gcr.io/distroless/java:8
+LABEL description="Echo IP Java Application"
+EXPOSE 60434
+COPY --from=int-build inbuilder/target/app-in-host.jar /opt/app-in-image.jar
+WORKDIR /opt
+ENTRYPOINT [ "java", "-jar", "app-in-image.jar" ]
+```
