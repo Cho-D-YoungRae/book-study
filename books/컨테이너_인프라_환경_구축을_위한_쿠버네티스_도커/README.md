@@ -13,6 +13,13 @@
 5. 지속적 통합과 배포 자동화, 젠킨스
 6. [안정적인 운영을 완성하는 모니터링, 프로메테우스와 그라파나](./chapter06.md)
 
+### 부록
+
+1. A. kubectl을 더 쉽게 사용하기
+2. B. 쿠버 대시보드 구성하기
+3. C. kubespray로 쿠버네티스 자동 구성하기
+4. [D. 컨테이너 깊게 들여다보기](./appendix-d.md)
+
 ## 참고
 
 - [minikube 환경 prometheus, grafana 설치](https://brain2life.hashnode.dev/prometheus-and-grafana-setup-in-minikube)
