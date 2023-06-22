@@ -2,7 +2,7 @@
 
 > [github](https://github.com/sysnet4admin/_Book_k8sInfra)
 
-- [ ] 2023/06/15 ~ ing
+- [x] 2023/06/15 ~ 2023/06/22
 
 ## Contents
 
