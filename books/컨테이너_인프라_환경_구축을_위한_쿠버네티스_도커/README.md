@@ -23,3 +23,6 @@
 ## 참고
 
 - [minikube 환경 prometheus, grafana 설치](https://brain2life.hashnode.dev/prometheus-and-grafana-setup-in-minikube)
+- ClusterIP, NodePort, LoadBalancer, Ingress
+  - <https://velog.io/@hoonki/쿠버네티스-서비스ClusterIP-NodePort-LoadBalancer와-인그레스>
+  - <https://seongjin.me/kubernetes-service-types/>
