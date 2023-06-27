@@ -20,6 +20,10 @@
 3. C. kubespray로 쿠버네티스 자동 구성하기
 4. [D. 컨테이너 깊게 들여다보기](./appendix-d.md)
 
+## 추가
+
+- [추가 학습](./additional.md)
+
 ## 참고
 
 - [minikube 환경 prometheus, grafana 설치](https://brain2life.hashnode.dev/prometheus-and-grafana-setup-in-minikube)
