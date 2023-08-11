@@ -1,6 +1,6 @@
 # 마이크로서비스 패턴
 
-> [github](https://github.com/gilbutITbook/007035)
+> [github](https://github.com/gilbutITbook/007035)  
 > [원문 github](https://github.com/microservices-patterns/ftgo-application)
 
 ## Contents
@@ -9,3 +9,4 @@
 2. [분해 전략](chapter02.md)
 3. [프로세스 간 통신](chapter03.md)
 4. [트랜잭션 관리: 사가](chapter04.md)
+5. [비즈니스 로직 설계](chapter05.md)
