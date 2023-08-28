@@ -12,3 +12,4 @@
 5. [비즈니스 로직 설계](chapter05.md)
 6. [비즈니스 로직 개발: 이벤트 소싱](chapter06.md)
 7. [마이크로서비스 쿼리 구현](chapter07.md)
+8. [외부 API 패턴](chapter08.md)
