@@ -3,6 +3,8 @@
 > [github](https://github.com/gilbutITbook/007035)  
 > [원문 github](https://github.com/microservices-patterns/ftgo-application)
 
+- [x] 2023/08/08 ~ 2023/08/29 (Chapter 1~8)
+
 ## Contents
 
 1. [모놀리식 지옥에서 벗어나라](chapter01.md)
@@ -15,3 +17,6 @@
 8. [외부 API 패턴](chapter08.md)
 9. [마이크로서비스 테스트 1부](chapter09.md)
 10. [마이크로서비스 테스트 2부](chapter10.md)
+11. [프로덕션 레디 서비스 개발](chapter11.md)
+12. [마이크로서비스 배포](chapter12.md)
+13. [마이크로서비스로 리팩터링](chapter13.md)
