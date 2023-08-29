@@ -4,6 +4,7 @@
 > [원문 github](https://github.com/microservices-patterns/ftgo-application)
 
 - [x] 2023/08/08 ~ 2023/08/29 (Chapter 1~8)
+- [ ] 2023/08/29 ~ ing
 
 ## Contents
 
