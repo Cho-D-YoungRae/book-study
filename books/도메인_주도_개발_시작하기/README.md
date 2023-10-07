@@ -2,6 +2,8 @@
 
 > [github](https://github.com/madvirus/ddd-start2)
 
+- [ ] 2023/09/28 ~ ing
+
 ## Contents
 
 1. [도메인 모델 시작하기](./chapter01.md)
@@ -10,3 +12,4 @@
 4. [리포지터리와 모델 구현](./chapter04.md)
 5. [스프링 데이터 JPA를 이용한 조회 기능](./chapter05.md)
 6. [응용 서비스와 표현 영역](./chapter06.md)
+7. [도메인 서비스](./chapter07.md)
