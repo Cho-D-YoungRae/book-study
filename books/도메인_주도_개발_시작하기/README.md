@@ -16,3 +16,4 @@
 8. [애그리거트 트랜잭션 관리](./chapter08.md)
 9. [도메인 모델과 바운디드 컨텍스트](./chapter09.md)
 10. [이벤트](./chapter10.md)
+11. [CQRS](./chapter11.md)
