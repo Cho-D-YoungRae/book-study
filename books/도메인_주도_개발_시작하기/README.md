@@ -2,7 +2,7 @@
 
 > [github](https://github.com/madvirus/ddd-start2)
 
-- [ ] 2023/09/28 ~ ing
+- [x] 2023/09/28 ~ 2023/10/09
 
 ## Contents
 
