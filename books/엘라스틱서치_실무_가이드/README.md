@@ -3,4 +3,4 @@
 > [Index Snapshot](https://github.com/javacafe-project/elastic-book-snapshot)  
 > [Example](https://github.com/javacafe-project/elastic-book)
 
-- [ ] 2023/10/26 ~ ing
+- [x] 2023/10/26 ~ 2023/12/19 STOP: 다른 급한 것 먼저...
