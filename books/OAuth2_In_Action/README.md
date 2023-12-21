@@ -11,3 +11,4 @@
 3. [간단한 OAuth 클라이언트](./chapter03.md)
 4. [간단한 OAuth 리소스 서버](./chapter04.md)
 5. [간단한 OAuth 인가 서버](./chapter05.md)
+6. [현실 세계의 OAuth 2.0](./chapter06.md)
