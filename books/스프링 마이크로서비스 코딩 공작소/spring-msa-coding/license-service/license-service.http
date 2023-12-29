@@ -1,3 +1,6 @@
+### actuator env
+GET http://localhost:8080/actuator/env
+
 ### getLicense
 GET http://localhost:8080/v1/organization/optimaGrowth/license/0235431845
 Accept: application/json

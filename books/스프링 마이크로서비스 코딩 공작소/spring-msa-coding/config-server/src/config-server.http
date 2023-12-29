@@ -1,0 +1,7 @@
+### license-service default
+GET http://localhost:8888/license-service/default
+Accept: application/json
+
+### license-service dev
+GET http://localhost:8888/license-service/dev
+Accept: application/json
