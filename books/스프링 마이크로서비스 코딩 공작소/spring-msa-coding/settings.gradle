@@ -1,3 +1,4 @@
 rootProject.name = 'spring-msa-coding'
 
 include ':license-service'
+include ':config-server'
