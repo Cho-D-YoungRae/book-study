@@ -1,0 +1,28 @@
+### getLicense
+GET http://localhost:8080/v1/organization/optimaGrowth/license/0235431845
+Accept: application/json
+
+### createLicense
+POST http://localhost:8080/v1/organization/optimaGrowth/license
+Content-Type: application/json
+Accept-Language: es
+
+{
+  "licenseId": "0235431845",
+  "description": "Software product",
+  "organizationId": "optimaGrowth",
+  "productName": "Ostock",
+  "licenseType": "complete"
+}
+
+### updateLicense
+PUT http://localhost:8080/v1/organization/optimaGrowth/license
+Content-Type: application/json
+
+{
+  "licenseId": "0235431845",
+  "description": "Software product",
+  "organizationId": "optimaGrowth",
+  "productName": "Ostock",
+  "licenseType": "complete"
+}
