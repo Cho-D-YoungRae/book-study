@@ -2,7 +2,7 @@
 
 > [github](https://github.com/oauthinaction/oauth-in-action-code)
 
-- [ ] 2023/11/22 ~ ing
+- [x] 2023/11/22 ~ 2024/01/09
 
 ## Contents
 
