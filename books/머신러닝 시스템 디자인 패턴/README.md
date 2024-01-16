@@ -2,4 +2,5 @@
 
 > [github](https://github.com/wikibook/mlsdp)
 
-- [ ] 2024/01/12 ~ ing
+- [x] 2024/01/12 ~ 2024/01/15
+  - 일단 현재 필요한 chapter 3 만
