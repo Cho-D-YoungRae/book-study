@@ -2,4 +2,4 @@
 
 > [github](https://github.com/taehojo/deeplearning)
 
-- [ ] 2024/03/11 ~ ing
+- [x] 2024/03/11 ~ 2024/03/17
