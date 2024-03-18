@@ -2,4 +2,5 @@
 
 > [github](https://github.com/bjpublic/apache-kafka-with-java)
 
-- [ ] 2023/12/26 ~ ing
+- [x] 2023/12/26 ~ STOP
+- [ ] 2023/03/18 ~ ing
