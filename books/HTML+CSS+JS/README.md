@@ -1,7 +1,9 @@
-# HTML+CSS+JS
+# 코딩 자율학습 HTML + CSS + JS
+
+> [github](https://github.com/gilbutITbook/080313)
 
 - [x] 2022/01/07 ~ 2022/01/15
-- [ ] 2023/12/19 ~ ing
+- [x] 2023/12/19 ~ 2024/03/27
 
 ## Note
 
