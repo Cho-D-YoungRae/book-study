@@ -92,10 +92,6 @@
 - [면접을 위한 CS 전공지식노트](./books/면접을_위한_CS_전공지식노트/README.md)
 - [혼자 공부하는 컴퓨터구조 + 운영체제](./books/혼자_공부하는_컴퓨터구조_운영체제/README.md)
 
-## Vue.js
-
-- [Vue.js 프로젝트 투입 일주일 전](books/Vue_js_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%88%AC%EC%9E%85_%EC%9D%BC%EC%A3%BC%EC%9D%BC_%EC%A0%84/)
-
 ## git
 
 - Doit! 지옥에서 온 문서 관리자 깃 & 깃허브 입문
@@ -124,8 +120,10 @@
 
 - 이것이 안드로이드다
 
-## HTML+CSS+JS
+## 웹 프론트엔드
 
 - 생활코딩! HTML+CSS+자바스크립트
 - 코딩 자율학습 HTML+CSS+자바스크립트
   - 베타리딩
+- [Vue.js 프로젝트 투입 일주일 전](books/Vue_js_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%88%AC%EC%9E%85_%EC%9D%BC%EC%A3%BC%EC%9D%BC_%EC%A0%84/)
+- [모던 리액트 Deep Dive](./books/모던%20리액트%20Deep%20Dive/README.md)
