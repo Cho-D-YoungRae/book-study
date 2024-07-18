@@ -3,6 +3,7 @@
 > [github](https://github.com/sysnet4admin/_Book_k8sInfra)
 
 - [x] 2023/06/15 ~ 2023/06/22
+- [x] 2024/07/18 - 3장 복습
 
 ## Contents
 
