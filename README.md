@@ -28,7 +28,7 @@
 ## JAVA
 
 - 명품 JAVA Programming
-- 윤성우의 열혈 Java 프로그래밍
+- [윤성우의 열혈 Java 프로그래밍](./books/윤성우의_열혈_Java_프로그래밍/README.md)
 - [자바의 정석](./books/자바의_정석/README.md)
 - [모던 자바 인 액션](./books/모던_자바_인_액션/README.md)
 - [이펙티브 자바 (Effective Java 3/E)](./books/이펙티브_자바_3E/README.md)
