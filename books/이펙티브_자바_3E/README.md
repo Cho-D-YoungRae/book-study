@@ -2,7 +2,7 @@
 
 > [github](https://github.com/WegraLee/effective-java-3e-source-code)
 
-- [ ] 2024/05/05 ~ ing
+- [x] 2024/05/05 ~ 2024/06/11 - 중단
 
 ## Content
 
