@@ -1,4 +1,4 @@
-package com.example;
+package com.example.chapter01;
 
 public class Bag {
 
