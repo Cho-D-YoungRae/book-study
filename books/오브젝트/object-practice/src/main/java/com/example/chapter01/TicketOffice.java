@@ -1,4 +1,4 @@
-package com.example;
+package com.example.chapter01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
