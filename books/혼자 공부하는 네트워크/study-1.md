@@ -56,3 +56,8 @@ NAT
 
 게이트웨이
 
+## Chapter 4
+
+IP 한계
+
+NAT, NATP
