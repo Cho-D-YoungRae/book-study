@@ -61,3 +61,23 @@ NAT
 IP 한계
 
 NAT, NATP
+
+포트의 분류
+
+TCP 통신의 세 단계
+
+MSS
+
+TCP 세그먼트 구조
+
+TCP 상태
+
+UDP
+
+UDP 데이터그램 헤더
+
+TCP 오류 제어
+
+TCP 흐름 제어
+
+TCP 혼잡 제어
