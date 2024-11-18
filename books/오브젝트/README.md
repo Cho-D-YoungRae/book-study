@@ -2,4 +2,4 @@
 
 > [github](https://github.com/eternity-oop/object)
 
-- [ ] 2024/11/07 ~
+- [x] 2024/11/07 ~ 2024/11/18 - STOP
