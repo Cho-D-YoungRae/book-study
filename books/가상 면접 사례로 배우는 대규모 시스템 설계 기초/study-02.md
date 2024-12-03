@@ -45,3 +45,13 @@ CDN 사용시 고려사항
 이동 윈도 로깅 알고리즘 동작, 장단점
 
 이동 윈도 카운터 알고리즘 동작, 장단점
+
+## 7. 분산 시스템을 위한 유일 ID 생성기 설계
+
+분산 시스템에서 유일성이 보장되는 ID를 만드는 방법
+
+- 다중 마스터 복제(multi-master replication)
+- UUID(Universally Unique Identifier)
+- 티켓 서버(ticket server)
+- 트위터 스노플레이커(twitter snowflake) 접근법
+
