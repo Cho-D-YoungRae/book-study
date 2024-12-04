@@ -55,3 +55,10 @@ CDN 사용시 고려사항
 - 티켓 서버(ticket server)
 - 트위터 스노플레이커(twitter snowflake) 접근법
 
+## 8. URL 단축기 설계
+
+HTTP 301 vs 302
+
+해시 후 충돌 해소 전략
+
+base62 변환
