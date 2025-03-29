@@ -1,0 +1,13 @@
+### POST create
+POST http://localhost:8080/shorten-url
+Content-Type: application/json
+
+{
+  "url": "https://google.com"
+}
+
+### GET get
+GET http://localhost:8080/shorten-url/BjFxgW6n
+
+### GET redirect
+GET http://localhost:8080/BjFxgW6n
