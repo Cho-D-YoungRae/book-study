@@ -1,4 +1,4 @@
-package com.example.unittesting.chapter01.listing02;
+package com.example.unittesting.chapter02.listing02;
 
 public class Customer {
 
