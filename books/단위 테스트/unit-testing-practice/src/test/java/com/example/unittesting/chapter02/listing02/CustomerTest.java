@@ -1,8 +1,6 @@
-package com.example.unittesting.chapter01.listing02;
+package com.example.unittesting.chapter02.listing02;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.InOrder;
-import org.mockito.verification.VerificationMode;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;

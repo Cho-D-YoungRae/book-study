@@ -1,4 +1,4 @@
-package com.example.unittesting.chapter01.listing01;
+package com.example.unittesting.chapter02.listing01;
 
 import java.util.HashMap;
 import java.util.Map;

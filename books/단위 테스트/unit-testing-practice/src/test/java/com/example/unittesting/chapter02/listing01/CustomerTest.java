@@ -1,6 +1,5 @@
-package com.example.unittesting.chapter01.listing01;
+package com.example.unittesting.chapter02.listing01;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
