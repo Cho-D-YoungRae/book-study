@@ -1,0 +1,12 @@
+spring:
+  application.name: kafka-study-2
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:29092,localhost:39092,localhost:49092
+      acks: 1
+
+    consumer:
+      bootstrap-servers: localhost:29092,localhost:39092,localhost:49092
+    listener:
+      type: SINGLE
