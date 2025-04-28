@@ -1,4 +1,4 @@
-package com.example.kafkastudy.chapter03;
+package com.example.kafkastudy.chapter04;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -14,12 +14,11 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class MultiConsumerThread_223 {
+public class ConsumerWithMultiWorkerThread_220 {
 
     private static final String TOPIC_NAME = "test";
     private static final String BOOTSTRAP_SERVERS = "localhost:29092,localhost:39092,localhost:49092";
     private static final String GROUP_ID = "test-group";
-    private static final int CONSUMER_THREAD_COUNT = 3;
 
     public static void main(String[] args) {
         Properties configs = new Properties();
@@ -28,9 +27,14 @@ public class MultiConsumerThread_223 {
         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 
-        try (ExecutorService es = Executors.newFixedThreadPool(CONSUMER_THREAD_COUNT)) {
-            for (int i = 0; i < CONSUMER_THREAD_COUNT; i++) {
-                es.execute(new ConsumerWorker(configs, TOPIC_NAME));
+        try (KafkaConsumer<String, String> consumer = new KafkaConsumer<>(configs); ExecutorService es = Executors.newCachedThreadPool()) {
+            consumer.subscribe(List.of(TOPIC_NAME));
+            while (true) {
+                ConsumerRecords<String, String> consumerRecords = consumer.poll(Duration.ofSeconds(1));
+                for (ConsumerRecord<String, String> consumerRecord : consumerRecords) {
+                    ConsumerWorker worker = new ConsumerWorker(consumerRecord.value());
+                    es.execute(worker);
+                }
             }
         }
     }
@@ -39,26 +43,15 @@ public class MultiConsumerThread_223 {
 
         private static final Logger log = LoggerFactory.getLogger(ConsumerWorker.class);
 
-        private final Properties configs;
-        private final String topic;
+        private final String recordValue;
 
-        public ConsumerWorker(Properties configs, String topic) {
-            this.configs = configs;
-            this.topic = topic;
+        public ConsumerWorker(String recordValue) {
+            this.recordValue = recordValue;
         }
 
         @Override
         public void run() {
-            // KafkaConsumer 는 스레드 세이프하지 않아서 스레드별로 인스턴스를 별개로 ㅅ만들어서 운영해야만 한다.
-            try (KafkaConsumer<String, String> consumer = new KafkaConsumer<>(configs)) {
-                consumer.subscribe(List.of(topic));
-                while (true) {
-                    ConsumerRecords<String, String> consumerRecords = consumer.poll(Duration.ofSeconds(1));
-                    for (ConsumerRecord<String, String> consumerRecord : consumerRecords) {
-                        log.info("thread:{}\trecord:{}", Thread.currentThread().getName(), consumerRecord);
-                    }
-                }
-            }
+            log.info("thread:{}\trecord:{}", Thread.currentThread().getName(), recordValue);
         }
     }
 }
