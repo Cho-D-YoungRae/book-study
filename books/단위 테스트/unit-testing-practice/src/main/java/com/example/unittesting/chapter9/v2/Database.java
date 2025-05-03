@@ -1,4 +1,4 @@
-package com.example.unittesting.chapter08.version1;
+package com.example.unittesting.chapter9.v2;
 
 import com.example.unittesting.storage.CompanyEntity;
 import com.example.unittesting.storage.CompanyJpaRepository;
