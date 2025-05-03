@@ -24,8 +24,7 @@ public class UserEntity {
     private String email;
 
     @Column(name = "type", nullable = false)
-    @Enumerated(EnumType.STRING)
-    private UserType type;
+    private String type;
 
     @Column(name = "email_confirmed", nullable = false)
     private boolean emailConfirmed;
@@ -33,14 +32,14 @@ public class UserEntity {
     protected UserEntity() {
     }
 
-    public UserEntity(Long id, String email, UserType type, boolean emailConfirmed) {
+    public UserEntity(Long id, String email, String type, boolean emailConfirmed) {
         this.id = id;
         this.email = email;
         this.type = type;
         this.emailConfirmed = emailConfirmed;
     }
 
-    public void update(String email, UserType type, boolean emailConfirmed) {
+    public void update(String email, String type, boolean emailConfirmed) {
         this.email = email;
         this.type = type;
         this.emailConfirmed = emailConfirmed;
@@ -54,7 +53,7 @@ public class UserEntity {
         return email;
     }
 
-    public UserType getType() {
+    public String getType() {
         return type;
     }
 
