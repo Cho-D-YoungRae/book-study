@@ -11,12 +11,10 @@ public class EventDispatcher {
 
     private final MessageBus messageBus;
     private final IDomainLogger domainLogger;
-    private final Database database;
 
-    public EventDispatcher(MessageBus messageBus, IDomainLogger domainLogger, Database database) {
+    public EventDispatcher(MessageBus messageBus, IDomainLogger domainLogger) {
         this.messageBus = messageBus;
         this.domainLogger = domainLogger;
-        this.database = database;
     }
 
     public void dispatch(List<IDomainEvent> events) {
@@ -35,10 +33,6 @@ public class EventDispatcher {
                             oldUserType,
                             newUserType
                     );
-            case CompanyEmployeeNumberChangedEvent(String domainName, int delta) -> {
-                Company company = database.getCompanyByDomainName(domainName);
-                database.saveCompany(company.changeNumberOfEmployees(delta));
-            }
             default -> log.warn("Unknown event type: {}", event.getClass().getName());
         }
     }

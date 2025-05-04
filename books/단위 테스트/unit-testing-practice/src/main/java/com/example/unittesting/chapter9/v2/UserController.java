@@ -21,8 +21,9 @@ public class UserController {
 
         Company company = database.getCompanyByDomainName(COMPANY_DOMAIN_NAME);
 
-        User updatedUser = user.changeEmail(newEmail, company);
-        database.saveUser(updatedUser);
-        eventDispatcher.dispatch(updatedUser.domainEvents());
+        UserEmailChangeResult result = user.changeEmail(newEmail, company);
+        database.saveUser(result.user());
+        database.saveCompany(result.company());
+        eventDispatcher.dispatch(result.user().domainEvents());
     }
 }
