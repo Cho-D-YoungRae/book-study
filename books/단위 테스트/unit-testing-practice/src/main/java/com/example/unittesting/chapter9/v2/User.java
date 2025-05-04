@@ -20,13 +20,13 @@ public record User(
         return !emailConfirmed;
     }
 
-    public User changeEmail(String newEmail, Company company) {
+    public UserEmailChangeResult changeEmail(String newEmail, Company company) {
         if (!canChangeEmail()) {
             throw new IllegalStateException();
         }
 
         if (email.equals(newEmail)) {
-            return this;
+            return new UserEmailChangeResult(this, company);
         }
 
         List<IDomainEvent> events = new ArrayList<>();
@@ -34,11 +34,12 @@ public record User(
         UserType newType = company.isEmailCorporate(newEmail) ? UserType.EMPLOYEE : UserType.CUSTOMER;
         if (type != newType) {
             int delta = newType == UserType.EMPLOYEE ? 1 : -1;
-            events.add(new CompanyEmployeeNumberChangedEvent(company.domainName(), delta));
+            company = company.changeNumberOfEmployees(delta);
             events.add(new UserTypeChangedEvent(id, type, newType));
         }
 
         events.add(new EmailChangedEvent(id, newEmail));
-        return new User(id, newEmail, newType, emailConfirmed, events.stream().toList());
+        User user = new User(id, newEmail, newType, emailConfirmed, events.stream().toList());
+        return new UserEmailChangeResult(user, company);
     }
 }

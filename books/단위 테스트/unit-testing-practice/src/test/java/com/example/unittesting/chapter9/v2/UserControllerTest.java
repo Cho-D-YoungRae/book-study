@@ -31,7 +31,7 @@ class UserControllerTest {
         var busMock = mock(IBus.class);
         var messageBus = new MessageBus(busMock);
         var loggerMock = mock(IDomainLogger.class);
-        var eventDispatcher = new EventDispatcher(messageBus, loggerMock, db);
+        var eventDispatcher = new EventDispatcher(messageBus, loggerMock);
         var sut = new UserController(db, eventDispatcher);
 
         // Act
@@ -63,7 +63,7 @@ class UserControllerTest {
         var busSpy = new BusSpy();
         var messageBus = new MessageBus(busSpy);
         var loggerMock = mock(IDomainLogger.class);
-        var eventDispatcher = new EventDispatcher(messageBus, loggerMock, db);
+        var eventDispatcher = new EventDispatcher(messageBus, loggerMock);
         var sut = new UserController(db, eventDispatcher);
 
         // Act
