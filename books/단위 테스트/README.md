@@ -2,4 +2,4 @@
 
 > [github](https://github.com/AcornPublishing/unit-testing)
 
-- [ ] 2025/04/17 ~ ing
+- [x] 2025/04/17 ~ 2025/05/07
