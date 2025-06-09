@@ -4,52 +4,52 @@
 
 ## Programming
 
-- [클린 코드](./books/클린_코드/README.md)
-- [테스트 주도 개발 시작하기](./books/테스트_주도_개발_시작하기/README.md)
-- [도메인 주도 개발 시작하기](./books/도메인_주도_개발_시작하기/README.md)
-- [클린 아키텍처](./books/클린%20아키텍처/README.md)
-- [만들면서 배우는 헥사고날 아키텍처 설계와 구현](/books/만들면서%20배우는%20헥사고날%20아키텍처/README.md)
-- [만들면서 배우는 클린 아키텍처](./books/만들면서%20배우는%20클린%20아키텍처/README.md)
-- [오브젝트](./books/오브젝트/README.md)
-- [이것이 취업을 위한 백엔드 개발이다](./books/이것이%20취업을%20위한%20백엔드%20개발이다/README.md)
-- [단위 테스트](./books/단위%20테스트/README.md)
+- [클린 코드](./books/클린_코드)
+- [테스트 주도 개발 시작하기](./books/테스트_주도_개발_시작하기)
+- [도메인 주도 개발 시작하기](./books/도메인_주도_개발_시작하기)
+- [클린 아키텍처](./books/클린%20아키텍처)
+- [만들면서 배우는 헥사고날 아키텍처 설계와 구현](/books/만들면서%20배우는%20헥사고날%20아키텍처)
+- [만들면서 배우는 클린 아키텍처](./books/만들면서%20배우는%20클린%20아키텍처)
+- [오브젝트](./books/오브젝트)
+- [이것이 취업을 위한 백엔드 개발이다](./books/이것이%20취업을%20위한%20백엔드%20개발이다)
+- [단위 테스트](./books/단위%20테스트)
 
 ## Architecture
 
-- [가상 면접 사례로 배우는 대규모 시스템 설계 기초](books/가상%20면접%20사례로%20배우는%20대규모%20시스템%20설계%20기초/README.md)
-- [마이크로서비스 패턴](books/마이크로서비스%20패턴/README.md)
-- [OAuth2.0 In Action](./books/OAuth2_In_Action/README.md)
-- [스프링 마이크로서비스 코딩 공작소](./books/스프링%20마이크로서비스%20코딩%20공작소/README.md)
-- [머신러닝 시스템 디자인 패턴](./books/머신러닝%20시스템%20디자인%20패턴/README.md)
+- [가상 면접 사례로 배우는 대규모 시스템 설계 기초](books/가상%20면접%20사례로%20배우는%20대규모%20시스템%20설계%20기초)
+- [마이크로서비스 패턴](books/마이크로서비스%20패턴)
+- [OAuth2.0 In Action](./books/OAuth2_In_Action)
+- [스프링 마이크로서비스 코딩 공작소](./books/스프링%20마이크로서비스%20코딩%20공작소)
+- [머신러닝 시스템 디자인 패턴](./books/머신러닝%20시스템%20디자인%20패턴)
 
 ## Algorithm
 
 - 윤성우의 열혈 자료구조
 - [파이썬 알고리즘 인터뷰](https://github.com/Cho-D-YoungRae/AlgorithmStudy/tree/main/leetcode)
-- [이것이 코딩 테스트다](./books/이것이_코딩_테스트다/README.md)
+- [이것이 코딩 테스트다](./books/이것이_코딩_테스트다)
 
 ## JAVA
 
 - 명품 JAVA Programming
-- [윤성우의 열혈 Java 프로그래밍](./books/윤성우의_열혈_Java_프로그래밍/README.md)
-- [자바의 정석](./books/자바의_정석/README.md)
-- [모던 자바 인 액션](./books/모던_자바_인_액션/README.md)
-- [이펙티브 자바 (Effective Java 3/E)](./books/이펙티브_자바_3E/README.md)
+- [윤성우의 열혈 Java 프로그래밍](./books/윤성우의_열혈_Java_프로그래밍)
+- [자바의 정석](./books/자바의_정석)
+- [모던 자바 인 액션](./books/모던_자바_인_액션)
+- [이펙티브 자바 (Effective Java 3/E)](./books/이펙티브_자바_3E)
 
 ## Kotlin
 
-- [코틀린 완벽 가이드](./books/%EC%BD%94%ED%8B%80%EB%A6%B0_%EC%99%84%EB%B2%BD_%EA%B0%80%EC%9D%B4%EB%93%9C/README.md)
+- [코틀린 완벽 가이드](./books/%EC%BD%94%ED%8B%80%EB%A6%B0_%EC%99%84%EB%B2%BD_%EA%B0%80%EC%9D%B4%EB%93%9C)
 
 ## 리액티브
 
-- [실전! 스프링5를 활용한 리액티브 프로그래밍](./books/실전_스프링5를_활용한_리액티브_프로그래밍/README.md)
-- [RxJava 리액티브 프로그래밍](./books/RxJava_리액티브_프로그래밍/README.md)
+- [실전! 스프링5를 활용한 리액티브 프로그래밍](./books/실전_스프링5를_활용한_리액티브_프로그래밍)
+- [RxJava 리액티브 프로그래밍](./books/RxJava_리액티브_프로그래밍)
 
 ## 도커/쿠버네티스
 
-- [컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커](./books/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88_%EC%9D%B8%ED%94%84%EB%9D%BC_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%B6%95%EC%9D%84_%EC%9C%84%ED%95%9C_%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4_%EB%8F%84%EC%BB%A4/README.md)
-- [쿠버네티스 교과서](./books/쿠버네티스_교과서/README.md)
-- [쿠버네티스 인 액션](./books/쿠버네티스_인_액션/README.md)
+- [컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커](./books/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88_%EC%9D%B8%ED%94%84%EB%9D%BC_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%B6%95%EC%9D%84_%EC%9C%84%ED%95%9C_%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4_%EB%8F%84%EC%BB%A4)
+- [쿠버네티스 교과서](./books/쿠버네티스_교과서)
+- [쿠버네티스 인 액션](./books/쿠버네티스_인_액션)
 
 ## Python
 
@@ -79,21 +79,21 @@
 ## Database
 
 - 이것이 MySQL이다
-- [Real MySQL 8.0](./books/Real_MySQL/README.md)
-- [이것이 레디스다](./books/%EC%9D%B4%EA%B2%83%EC%9D%B4_%EB%A0%88%EB%94%94%EC%8A%A4%EB%8B%A4/README.md)
-- [엘라스틱서치 실무 가이드](./books/엘라스틱서치_실무_가이드/README.md)
-- [개발자를 위한 레디스](./books/개발자를%20위한%20레디스/README.md)
-- [아파치 카프카 애플리케이션 프로그래밍](./books/아파치%20카프카%20애플리케이션%20프로그래밍/README.md)
+- [Real MySQL 8.0](./books/Real_MySQL)
+- [이것이 레디스다](./books/%EC%9D%B4%EA%B2%83%EC%9D%B4_%EB%A0%88%EB%94%94%EC%8A%A4%EB%8B%A4)
+- [엘라스틱서치 실무 가이드](./books/엘라스틱서치_실무_가이드)
+- [개발자를 위한 레디스](./books/개발자를%20위한%20레디스)
+- [아파치 카프카 애플리케이션 프로그래밍](./books/아파치%20카프카%20애플리케이션%20프로그래밍)
 
 ## AWS
 
-- [당신이 지금 알아야할 AWS](./books/당신이_지금_알아야할_AWS/README.md)
+- [당신이 지금 알아야할 AWS](./books/당신이_지금_알아야할_AWS)
 
 ## CS
 
-- [윤성우의 열혈 TCP/IP 소켓 프로그래밍](./books/윤성우의_열혈_TCPIP_소켓_프로그래밍/README.md)
-- [면접을 위한 CS 전공지식노트](./books/면접을_위한_CS_전공지식노트/README.md)
-- [혼자 공부하는 컴퓨터구조 + 운영체제](./books/혼자_공부하는_컴퓨터구조_운영체제/README.md)
+- [윤성우의 열혈 TCP/IP 소켓 프로그래밍](./books/윤성우의_열혈_TCPIP_소켓_프로그래밍)
+- [면접을 위한 CS 전공지식노트](./books/면접을_위한_CS_전공지식노트)
+- [혼자 공부하는 컴퓨터구조 + 운영체제](./books/혼자_공부하는_컴퓨터구조_운영체제)
 
 ## git
 
@@ -102,7 +102,7 @@
 ## Machine Learning / Deep Learning
 
 - 혼자 공부하는 머신러닝 + 딥러닝
-- [모두의 딥러닝](/books/모두의_딥러닝/README.md)
+- [모두의 딥러닝](/books/모두의_딥러닝)
 - 파이썬 머신러닝 완벽 가이드
 - 밑바닥부터 시작하는 딥러닝
 - 밑바닥부터 시작하는 딥러닝2
@@ -113,7 +113,7 @@
 
 ## 데이터 분석
 
-- [Do it! 쉽게 배우는 파이썬 데이터 분석](./books/Do%20it!%20쉽게%20배우는%20파이썬%20데이터%20분석/README.md)
+- [Do it! 쉽게 배우는 파이썬 데이터 분석](./books/Do%20it!%20쉽게%20배우는%20파이썬%20데이터%20분석)
 
 ## Math
 
@@ -128,5 +128,5 @@
 - 생활코딩! HTML+CSS+자바스크립트
 - 코딩 자율학습 HTML+CSS+자바스크립트
   - 베타리딩
-- [Vue.js 프로젝트 투입 일주일 전](books/Vue_js_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%88%AC%EC%9E%85_%EC%9D%BC%EC%A3%BC%EC%9D%BC_%EC%A0%84/)
-- [모던 리액트 Deep Dive](./books/모던%20리액트%20Deep%20Dive/README.md)
+- [Vue.js 프로젝트 투입 일주일 전](books/Vue_js_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%88%AC%EC%9E%85_%EC%9D%BC%EC%A3%BC%EC%9D%BC_%EC%A0%84)
+- [모던 리액트 Deep Dive](./books/모던%20리액트%20Deep%20Dive)
