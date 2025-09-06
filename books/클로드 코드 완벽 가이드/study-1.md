@@ -695,3 +695,9 @@ Playwright MCP
 - 내가 어느 정도 알고 있는 프레임워크
   - 디버깅이 필요한 경우 있음
 - 가장 인기 있고 대중적인 프레임워크를 선택할수록 좋은 결과를 얻을 가능성 높음
+
+## Chapter 17. 인증 구현하기
+
+> [youtube](https://www.youtube.com/watch?v=RsUjQ3U3UxM)
+
+Supabase 워크플로는 로컬 Supabase 인스턴스를 실행해서 개발하다가 CI/CD 파이프라인을 통해서만 프로덕션 Supabase에 접근하는 걸 추천
