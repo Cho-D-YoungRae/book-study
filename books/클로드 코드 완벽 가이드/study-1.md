@@ -342,3 +342,134 @@ description: 하나의 디자인을 기반으로 여러 가지 독창적인 디�
 # Prompt Instruction
 현재 index.html의 디자인을 5개의 새로운 디자인으로 새로 제작해줘. 각각 design_concepts 폴더에 indes_1.html, index_2.html ... 현태로 새로 파일을 만들어 주고 파일별로 완전 새로운 디자인을 생성해줘. 각 디자인은 subagent가 담당할 수 있도록 해서 병렬로 작업해줘.
 ```
+
+## Chapter 11. MCP 사용하기
+
+> [youtube](https://www.youtube.com/watch?v=fPyX6G2Bh2g)
+
+MCP(Model Context Protocol) 란?
+
+- LLM이 데이터베이스, API, 파일 시스템과 같은 외부 도구 및 데이터 소스에 접근할 수 있도록 설계된 클라이언트-서버 구조의 개방형 프로토콜
+- 데이터베이스 스키마를 질의하거나 API 문서를 참조하게 하고, 심지어 원격 서버의 이슈를 분석하는 등 고도로 확장된 작업을 수행 가능
+
+MCP 서버 설정
+
+- `claude mcp` 명령어를 사용하거나 .mcp.json 파일을 수정해서 추가 가능
+- 서버는 로컬 프로세스로 실행되거나(stdio), 원격으로 접속(SSE, HTTP) 가능
+- MCP는 대표적으로 세 가지 타입
+  - 로컬 서버 방식(stdio)
+  - SSE
+  - HTTP
+- 대부분의 MCP 서버는 로컬 서버 방식으로 MCP wprhd
+
+로컬 서버 방식으로 MCP 추가
+
+- 가장 기본적인 로컬 서버 방식(stdio)
+- 클로드 코드가 사용자의 컴퓨터에서 직접 로컬 프로세스를 실행하고 해당 프로세스와 직접 통신하는 것을 의미
+
+```sh
+# 문법
+claude mcp add <name> <command> [args...]
+
+# 예제
+claude mcp add context -- npx -y @upstash/context7-mcp
+```
+
+```json
+{
+   "mcpServers": {
+      "context7": {
+         "type": "stdio",
+         "command": "npx",
+         "args": [
+            "-y",
+            "@upstash/context7-mcp"
+         ],
+         "env": {}
+      }
+   }
+}
+```
+
+SSE MCP 추가하기
+
+```sh
+# 문법
+claude mcp add --transport sse <name> <command> [args...]
+
+# 예제
+claude mcp add --transport sse context7 https://mcp.context7.com/sse
+```
+
+```json
+{
+   "mcpServers": {
+      "context7": {
+         "type": "sse",
+         "url": "https://mcp.context7.com/sse"
+      }
+   }
+}
+```
+
+HTTP MCP 추가 하기
+
+> MCP 에서는 스트리밍을 지원하는 HTTP 서버를 의미하는 경우가 많음
+
+```sh
+# 문법
+claude mcp add --transport http <name> <command> [args...]
+
+# 예제
+claude mcp add --transport http context7 https://mcp.context7.com/sse
+```
+
+```json
+{
+   "mcpServers": {
+      "context7": {
+         "type": "http",
+         "command": "npx",
+         "args": [
+            "-y",
+            "@upstash/context7-mcp"
+         ],
+         "env": {}
+      }
+   }
+}
+```
+
+MCP 연동이 잘 됐는지 확인하려면 `claude mcp list` 커맨드 사용
+
+MCP 의 세 가지 전송 방식은 각각 다른 용도로 활용
+
+- stdio 서버 방식
+  - 가장 많이 사용되는 방식
+  - 파이썬, bash 등 로컬 스크립트를 실행하기 때문에 네트워크 요청 필요 X
+  - 로컬에서 실행되므로 지연 시간이 매우 낮음
+  - 단순한 MCP 서버는 stdio 형태로 제공되는 경우가 많음
+  - 하지만 직접 서버를 업데이트해야 하기 때문에 항상 최신 버전을 사용하고 있다고 장담할 수 없다는 단점
+- SSE 서버와 HTTP 서버
+  - MCP 서버를 호스팅하는 측에서 서버를 실행하고 있기 때문에 네트워크 요청이 오가야 함
+  - 상대적으로 느리다는 단점
+  - 별도의 업데이트 없이 항상 최신 버전의 응답을 받을 수 있을 거란 기대
+  - MCP 서버를 구현할 때 더욱 다양한 기능을 제공할 수 있음
+
+|구분|stdio 서버|SSE 서버|HTTP 서버|
+|---|---|---|---|
+|실행 위치|로컬 컴퓨터|원격 서버|원격 서버|
+|통신 방향|양방향(프로세스 통신)|단방향(서버->클라이언트)|양방향(요청/응답)|
+|연결 방식|프로세스 실행|지속적 연결|요청 기반 연결|
+|핵심 용도|로컬 도구 및 스크립트 연동|실시간 데이터 스트리밍|일반적인 원격 API 연동|
+
+유용한 MCP 리스트
+
+|MCP 이름|기능|
+|Postgresql, Mongodb, Mysql|데이터베이스에 접근할 수 있습니다. 실제 데이터베이스에 어떤 데이터가 있는지 조회하고 마이그레이션 계획을 짤 때 유용합니다.|
+|Playwright, Puppeteer|MCP로 브라우저를 조종할 수 있습니다. 엔드투엔드 테스트를 하거나 크롤링할 때 유용합니다.|
+|context7|각종 개발 도구의 가장 최근 공식 문서를 가져옵니다.|
+|MagicUI|21st Dev의 아름다운 UI 컴포넌트들을 적용할 수 있습니다.|
+|Github|깃허브, 깃 기능을 실행할 수 있습니다.|
+|TossPayments, evenueCat|결제 관련 기능을 구현할 수 있습니다.|
+|Supabase|Supabase에 연결할 수 있습니다.|
