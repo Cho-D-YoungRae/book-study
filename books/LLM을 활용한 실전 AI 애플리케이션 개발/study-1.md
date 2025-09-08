@@ -236,3 +236,24 @@ RNN
 attention_mask 는 해당 토큰이 패딩 토큰인지 실제 데이터인지에 대한 정보
 
 - 토크나이저의 padding 인자에 'longest'를 입력하면 입력한 문장 중 가장 긴 문장에 맞춰 패딩 토큰 추가
+
+## Chapter 04. 말 잘듣는 모델 만들기
+
+GPT-3 는 단순히 다음 단어를 예측하는 방식이어서 사용자의 요청에 적절히 응답하기보다는 사용자의 말에 이어질 법한 텍스트를 생성한다는 한계 -> 챗GPT가 되려면?
+
+- 요청(또는 질문)과 답변 형식으로 된 지시 데이터셋(instruction dataset)을 통해 GPT-3가 사용자의 요청에 응답할 수 있도록 학습
+- 사용자가 더 좋아하고 사용자에게 더 도움이 되는 답변을 생성할 수 있도록 추가 학습 -> 사용자의 선호(preference)를 학습
+  - 선호를 학습한 LLM은 예를 들어 차별적인 표현을 사용하지 않고, 사용자가 위험해질 수 있는 정보(예: 무기 또는 약물의 제조 방법)에 대한 답변을 피하는 등 더 정제된 답변 생성
+
+사람들이 더 선호하는 답변을 생성할 수 있도록 모델을 조정하는 방법
+
+> LLM이 사용자의 요청에 맞춰 응답하도록 학습시키는 지도 미세 조정(supervised fine-tuning)
+
+- 강화 학습(reinforcement learning)을 사용하는 방법
+  - 근접 정책 최적화(Proximal Policy Optimization, PPO)
+    - 하이퍼파라미터에 민감
+    - 학습이 불안정
+  - RELF(Reinforment Learning from Human Feedback)
+- 사용하지 않는 방법
+  - 기각 샘플링(rejective sampling)
+  - 직접 선호 최적화(Direct Preference Optimization, DPO)

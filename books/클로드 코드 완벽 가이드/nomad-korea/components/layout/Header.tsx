@@ -13,20 +13,9 @@ export default function Header() {
             <span className="font-bold text-xl">NOMAD KOREA</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Simplified for Phase 1 */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/cities" className="text-sm font-medium transition-colors hover:text-primary">
-              도시 탐색
-            </Link>
-            <Link href="/community" className="text-sm font-medium transition-colors hover:text-primary">
-              커뮤니티
-            </Link>
-            <Link href="/guides" className="text-sm font-medium transition-colors hover:text-primary">
-              가이드
-            </Link>
-            <Link href="/events" className="text-sm font-medium transition-colors hover:text-primary">
-              이벤트
-            </Link>
+            {/* Navigation items removed - keeping only authentication related features */}
           </nav>
 
           {/* Right Section */}
