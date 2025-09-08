@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { TrendingUp, Users, Activity, ChevronUp, ChevronDown } from 'lucide-react'
+import { TrendingUp, Users, Activity, ChevronUp } from 'lucide-react'
 
 const trendingCities = [
   { name: '서울-성수동', change: 32, direction: 'up' },

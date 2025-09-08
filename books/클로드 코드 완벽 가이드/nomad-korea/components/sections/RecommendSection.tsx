@@ -7,8 +7,8 @@ const recommendedCities = [
     name: '속초',
     district: '대포항',
     image: '/images/sokcho-daepo.jpg',
-    rating: 4.7,
-    reviewCount: 87,
+    likes: 124,
+    dislikes: 18,
     monthlyBudget: '100-140',
     cafeDensity: 78,
     internetQuality: 90,
@@ -20,8 +20,8 @@ const recommendedCities = [
     name: '전주',
     district: '한옥마을',
     image: '/images/jeonju-hanok.jpg',
-    rating: 4.6,
-    reviewCount: 156,
+    likes: 198,
+    dislikes: 25,
     monthlyBudget: '90-130',
     cafeDensity: 82,
     internetQuality: 92,
@@ -33,8 +33,8 @@ const recommendedCities = [
     name: '춘천',
     district: '명동',
     image: '/images/chuncheon-myeongdong.jpg',
-    rating: 4.5,
-    reviewCount: 102,
+    likes: 89,
+    dislikes: 12,
     monthlyBudget: '100-150',
     cafeDensity: 85,
     internetQuality: 94,
@@ -76,7 +76,7 @@ export default function RecommendSection() {
 
         {/* Recommended Cities */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {recommendedCities.map((city, index) => (
+          {recommendedCities.map((city) => (
             <div key={`${city.name}-${city.district}`} className="relative">
               {/* Match Reason Badge */}
               <div className="absolute -top-3 left-4 right-4 z-10">

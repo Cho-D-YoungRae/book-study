@@ -1,11 +1,11 @@
-import Link from 'next/link'
+// Link import removed as it's no longer used in Phase 1
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone } from 'lucide-react'
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -35,69 +35,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">빠른 링크</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/cities" className="text-sm hover:text-white transition-colors">
-                  도시 탐색
-                </Link>
-              </li>
-              <li>
-                <Link href="/community" className="text-sm hover:text-white transition-colors">
-                  커뮤니티
-                </Link>
-              </li>
-              <li>
-                <Link href="/guides" className="text-sm hover:text-white transition-colors">
-                  가이드
-                </Link>
-              </li>
-              <li>
-                <Link href="/events" className="text-sm hover:text-white transition-colors">
-                  이벤트
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-sm hover:text-white transition-colors">
-                  블로그
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">지원</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/help" className="text-sm hover:text-white transition-colors">
-                  도움말 센터
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm hover:text-white transition-colors">
-                  문의하기
-                </Link>
-              </li>
-              <li>
-                <Link href="/partnership" className="text-sm hover:text-white transition-colors">
-                  파트너십
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-sm hover:text-white transition-colors">
-                  이용약관
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-sm hover:text-white transition-colors">
-                  개인정보처리방침
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Simplified for Phase 1 - Removed unnecessary navigation links */}
 
           {/* Contact */}
           <div>
@@ -128,15 +66,7 @@ export default function Footer() {
               © 2024 NOMAD KOREA. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <Link href="/sitemap" className="text-sm text-gray-500 hover:text-white transition-colors">
-                사이트맵
-              </Link>
-              <Link href="/accessibility" className="text-sm text-gray-500 hover:text-white transition-colors">
-                접근성
-              </Link>
-              <Link href="/cookies" className="text-sm text-gray-500 hover:text-white transition-colors">
-                쿠키 정책
-              </Link>
+              {/* Bottom links removed for Phase 1 simplification */}
             </div>
           </div>
         </div>

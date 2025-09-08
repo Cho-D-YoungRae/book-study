@@ -6,8 +6,8 @@ const hotCities = [
     name: '서울',
     district: '성수동',
     image: '/images/seoul-seongsu.jpg',
-    rating: 4.8,
-    reviewCount: 234,
+    likes: 342,
+    dislikes: 28,
     monthlyBudget: '150-200',
     cafeDensity: 95,
     internetQuality: 98,
@@ -18,8 +18,8 @@ const hotCities = [
     name: '부산',
     district: '해운대',
     image: '/images/busan-haeundae.jpg',
-    rating: 4.7,
-    reviewCount: 189,
+    likes: 267,
+    dislikes: 35,
     monthlyBudget: '120-160',
     cafeDensity: 88,
     internetQuality: 95,
@@ -30,8 +30,8 @@ const hotCities = [
     name: '제주',
     district: '애월',
     image: '/images/jeju-aewol.jpg',
-    rating: 4.9,
-    reviewCount: 312,
+    likes: 456,
+    dislikes: 19,
     monthlyBudget: '140-180',
     cafeDensity: 92,
     internetQuality: 93,
@@ -42,8 +42,8 @@ const hotCities = [
     name: '서울',
     district: '강남',
     image: '/images/seoul-gangnam.jpg',
-    rating: 4.6,
-    reviewCount: 456,
+    likes: 298,
+    dislikes: 67,
     monthlyBudget: '180-250',
     cafeDensity: 98,
     internetQuality: 99,
@@ -62,9 +62,7 @@ export default function HotCitiesSection() {
             <Flame className="h-8 w-8 text-red-500" />
             <h2 className="text-3xl font-bold">HOT 도시</h2>
           </div>
-          <a href="/cities" className="text-sm font-medium text-primary hover:underline">
-            전체보기 →
-          </a>
+{/* "전체보기" link removed for Phase 1 */}
         </div>
 
         {/* City Cards Grid */}

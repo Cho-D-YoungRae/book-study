@@ -1,15 +1,19 @@
+'use client'
+
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
-import { Star, Wifi, Coffee, TrendingUp, MapPin } from 'lucide-react'
+import LikeDislikeButton from '@/components/ui/like-dislike-button'
+import { Wifi, Coffee, TrendingUp, MapPin } from 'lucide-react'
+import { useState } from 'react'
 
 interface CityCardProps {
   city: {
     name: string
     district: string
     image: string
-    rating: number
-    reviewCount: number
+    likes: number
+    dislikes: number
     monthlyBudget: string
     cafeDensity: number
     internetQuality: number
@@ -19,6 +23,36 @@ interface CityCardProps {
 }
 
 export default function CityCard({ city }: CityCardProps) {
+  const [userVote, setUserVote] = useState<'like' | 'dislike' | null>(null)
+  const [currentLikes, setCurrentLikes] = useState(city.likes)
+  const [currentDislikes, setCurrentDislikes] = useState(city.dislikes)
+
+  const handleLike = () => {
+    if (userVote === 'like') {
+      setUserVote(null)
+      setCurrentLikes(prev => prev - 1)
+    } else {
+      if (userVote === 'dislike') {
+        setCurrentDislikes(prev => prev - 1)
+      }
+      setUserVote('like')
+      setCurrentLikes(prev => prev + 1)
+    }
+  }
+
+  const handleDislike = () => {
+    if (userVote === 'dislike') {
+      setUserVote(null)
+      setCurrentDislikes(prev => prev - 1)
+    } else {
+      if (userVote === 'like') {
+        setCurrentLikes(prev => prev - 1)
+      }
+      setUserVote('dislike')
+      setCurrentDislikes(prev => prev + 1)
+    }
+  }
+
   return (
     <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer">
       {/* Image Section */}
@@ -46,13 +80,15 @@ export default function CityCard({ city }: CityCardProps) {
 
       {/* Content Section */}
       <CardContent className="p-4">
-        {/* Rating */}
-        <div className="flex items-center gap-2 mb-3">
-          <div className="flex items-center gap-1">
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-            <span className="font-semibold">{city.rating}</span>
-          </div>
-          <span className="text-sm text-muted-foreground">({city.reviewCount})</span>
+        {/* Like/Dislike Buttons */}
+        <div className="mb-3">
+          <LikeDislikeButton
+            likes={currentLikes}
+            dislikes={currentDislikes}
+            userVote={userVote}
+            onLike={handleLike}
+            onDislike={handleDislike}
+          />
         </div>
 
         {/* Monthly Budget */}
