@@ -763,3 +763,74 @@ Supabase 워크플로는 로컬 Supabase 인스턴스를 실행해서 개발하�
 - 홈페이지에 처음 접속하면 필터가 적용 안 돼 있는걸 확인해줘
 - 홈페이지의 필터가 적용 안 돼 있으면 데이터베이스에 저장된 도시들이 전부 도시 카드로 나열 돼 있는 걸 확인해줘.
 ```
+
+## Chapter 21. 배포하기
+
+## Chapter 22. Super Claude
+
+> [youtube](https://www.youtube.com/watch?v=4ndOjpo2wS4)
+
+슈퍼 클로드는 클로드 코드에 파인튜닝된 커스텀 프롬프트를 생성하주는 클로드 코드 프레임워크
+
+- 바이브 코딩을 하면서 자주 사용하는 프롬프트와 MCP를 직접 정리할 필요 없이 잘 튜닝된 커스텀 커맨드가 사용자 설정에 생성되어 즉시 모든 프로젝트에 사용할 수 있음
+- 프롬프트가 매우 정교하고 Sequential Thinking 같은 MCP 도구가 함께 작동하기 때문에 토큰 사용량이 평소보다 많을 수 있지만 클로드 코드의 성능을 매우 강력하게 끌어올릴 수 있음
+
+슈퍼 클로드 프롬프트는 그 자체로 매우 섬세하게 파인튜닝되어 있어서 억지로 여러 플래그를 직접 사용하지 않아도 커스텀 커맨드가 프롬프트를 자동으로 인지하고 적절한 플래그를 적용해서 실행해줍니다.
+
+```sh
+# 프럼트엔드 작업 -> frontent persona + Magic MCP 자동 트리거
+/sc:build src/components
+
+# 보안 분석 -> security persona + Sequential MCP 자동 트리거
+/sc:analyze auth/ --focus security
+
+# 퍼포먼스 검증 -> performance persona + Playwright MCP 자동 트리거
+/sc:analyze --focus performance slow-endpoints/
+
+### 대규모 코드베이스를 관리할 때 ###
+
+# 효율적인 대규모 분석
+/sc:analyze monorepo/ --delegate auto --uc --focus architecture
+# -> 평행 작업 + 압축하기 + 아키텍처에 집중하기
+
+# 시스템적 개선
+/sc:improve legacy-system/ --save-mode auto --safe-mode
+# -> 여러 스템에 걸친 개선. 중간 중간 확인하기
+
+# 포괄적 코드 리뷰
+/sc:analyze enterprise-app/ --delegate folders --focuse quality
+# -> 분산된 퀄리티 분석
+
+### 레거시 시스템을 개선할 때 ###
+
+# 평가 단계
+/sc:analyze legacy/ --persona-architect --ultrathink
+# -> 아키텍처 깊게 분석하기
+
+# 플래닝 단계
+/sc:design modernization-strategy --type architecture
+# -> Comprehensive modernization plan
+
+# 실행할 때
+/sc:improve legacy/ --wave-mode systematic --safe-mode --loop
+# -> 여러 이터레이션에 걸쳐 안전하게 개선할 때
+
+# 마이그레이션
+/sc:migrate --type framework legacy-to-modern
+# -> 프레임워크 마이그레이션할 때
+
+### 다중 도메인 프로젝트를 작업할 때 ###
+
+# 여러 도메인에 걸쳐 작업하기
+/sc:analyze fullstack-app/ --all-mcp --delegate auto
+# -> 모든 MCP 서버 사용 + 평행 작업
+
+# 특정 도메인 관련 작업
+/sc:improve frontend/ --persona-frontend --magic
+/sc:improve backend/ --persona-backend --c7
+/sc:improve infrastructure/ --persona-devops --seq
+
+# 통합 검증
+/sc:test --type integration --play
+# -> 포괄적 통합 검증.
+```
