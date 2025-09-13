@@ -212,7 +212,7 @@ CLAUDE.md 관리
   - 나중에 구현하게 될 기능이라도 너무 큰 규모의 작업을 한 번에 하게 되면 컨텍스트 윈도우의 문제 발생
   - 계획이 너무 큰 경우 제어할 수 있는 범위 내에서 작업을 나눠 진행
 
-## Chapter 08. 모델 선택, 사용량 관리 딱 알려드립니다!
+## Chapter 08. 모델 선택, 사용량 관리 딱 알려드립니다
 
 Opus 와 Sonnect 의 **공통점**
 
@@ -768,7 +768,8 @@ Supabase 워크플로는 로컬 Supabase 인스턴스를 실행해서 개발하�
 
 ## Chapter 22. Super Claude
 
-> [youtube](https://www.youtube.com/watch?v=4ndOjpo2wS4)
+> [youtube](https://www.youtube.com/watch?v=4ndOjpo2wS4)  
+> [github](https://github.com/SuperClaude-Org/SuperClaude_Framework)
 
 슈퍼 클로드는 클로드 코드에 파인튜닝된 커스텀 프롬프트를 생성하주는 클로드 코드 프레임워크
 
@@ -833,4 +834,64 @@ Supabase 워크플로는 로컬 Supabase 인스턴스를 실행해서 개발하�
 # 통합 검증
 /sc:test --type integration --play
 # -> 포괄적 통합 검증.
+```
+
+## Chapter 23. Claudia
+
+> [youtube](https://www.youtube.com/watch?v=aoEjGsLnKCM)  
+> [github](https://github.com/getAsterisk/opcode)
+
+클로드코드 GUI 오픈소스 솔루션
+
+## Chapter 24. Claude Squad
+
+> [youtube](https://www.youtube.com/watch?v=DGwXIi9wgIQ)  
+> [github](https://github.com/smtg-ai/claude-squad)
+
+git worktree 를 매우 쉽게 사용할 수 있도록 해주는 tmux 기반 터미널 앱
+
+## Chapter 25. ccusage
+
+> [youtube](https://www.youtube.com/watch?v=lvQTdozIGkU)  
+> [github](https://github.com/ryoppippi/ccusage)
+
+클로드 코드 토큰 사용량과 세션 블록 라이브 모니터링, 사용 통계 모니터링
+
+## Chapter 26. Claude Code Action
+
+헤드리스 모드를 적극적으로 활용한 사례가 클로드 코드 액션
+
+- 풀리퀘 검증
+- 급한 버그 수정 및 이슈 해결을 위해 깃허브에서 바로 요청
+
+## Chapter 27. Claude Code Hooks
+
+클로드 코드 훅을 사용하면 특정 상황에 원하는 코드를 실행할 수 있음
+
+- 도구 사용 전(PreToolUse)
+- 도구 사용 후(PostToolUse)
+- 알림을 보낼 때(Notification)
+- 사용자가 프롬프트를 제출할 때(UserPromptSubmit)
+- 클로드 코드가 응답을 마쳤을 때(Stop)
+- 서브에이전트가 응답을 마쳤을 때(SubagentStop)
+- 컴팩트 작업이 실행되기 전(PreCompact)
+
+클로드 코드 훅은 JSON파일(settings.json)로 등록 가능
+
+```json
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"사용자 인풋이 필요합니다\" with title \"사용자 인풋이 필요합니다\" subtitle \"클로드 코드 인풋을 확인해주세요\" sound name \"Glass\"'"
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
