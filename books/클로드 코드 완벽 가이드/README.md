@@ -2,4 +2,4 @@
 
 > [github](https://github.com/codefactory-co/golden-rabbit-yojeum-claude-code-crypto-ranking-board)
 
-- [ ] 2025-09-05 ~ ing
+- [x] 2025-09-05 ~ 2025-09-13
