@@ -2,4 +2,4 @@
 
 > [github](https://github.com/onlybooks/llm)
 
-- [ ] 2025-08-26 ~
+- [x] 2025-08-26 ~ 2025-11-11
