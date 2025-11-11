@@ -369,3 +369,22 @@ LoRA 를 적용해야 할 때 결정해야 할 사항
 QLoRA
 
 - LoRA에 양자화를 추가해 메모리 효율성을 한 번 더 높인 학습 방법
+
+## Chapter 06. sLLM 학습하기
+
+성능 평가
+
+- 각 문제 상황에 일반적으로 잘 사용되는 평가 방식이 있을 수 있음.
+- GPT-4와 같은 뛰어난 성능의 LLM을 성능 평가자로 활용할 수 있음.
+
+OpenAI를 사용하는 평가
+
+- 평가 데이터셋이 많으면 오래걸릴 수 있음
+- [OpenAI CookBook code](https://github.com/openai/openai-cookbook/blob/main/examples/api_request_parallel_processor.py) 을 활용하면 요청 제한을 관리하면서 비동기적으로 요청을 보낼 수 있음
+
+autotrain-advanced
+
+- 파인튜닝 라이브러리
+- 허깅페이스에서 trl 라이브러리를 한 번 더 추상화 한 것
+- [github](https://github.com/huggingface/autotrain-advanced/blob/main/src/autotrain/cli/run_llm.py)
+
