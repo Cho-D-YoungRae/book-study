@@ -11,6 +11,7 @@ dependencies = [
     "langchainhub>=0.1.21",
     "langgraph>=1.0.3",
     "langsmith>=0.4.43",
+    "llama-index>=0.14.8",
     "notebook>=7.4.7",
     "openai>=2.8.0",
     "python-dotenv>=1.2.1",
