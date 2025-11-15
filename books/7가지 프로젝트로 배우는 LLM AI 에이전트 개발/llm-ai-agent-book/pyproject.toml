@@ -1,0 +1,17 @@
+[project]
+name = "llm-ai-agent-book"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "google-search-results>=2.4.2",
+    "langchain>=1.0.7",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.0.3",
+    "langchainhub>=0.1.21",
+    "langgraph>=1.0.3",
+    "langsmith>=0.4.43",
+    "notebook>=7.4.7",
+    "openai>=2.8.0",
+    "python-dotenv>=1.2.1",
+]
