@@ -2,4 +2,4 @@
 
 > [github](https://github.com/Choonholic/jpub_ai_agent)
 
-- [ ] 2025-11-12 ~ ing
+- [x] 2025-11-12 ~ 2025-11-15
