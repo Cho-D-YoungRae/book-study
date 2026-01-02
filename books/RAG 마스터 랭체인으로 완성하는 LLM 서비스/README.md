@@ -2,4 +2,5 @@
 
 > [github](https://github.com/langchain-kr/langchain-tutorial)
 
-- [ ] 2025-11-22 ~ ing
+- [x] 2025-11-22 ~ 2025-12-27
+`=
