@@ -2,7 +2,7 @@
 
 > [source](https://hanbit.co.kr/src/11423)
 
-- [ ] 2026-01-08 ~ ing
+- [x] 2026-01-08 ~ 2026-01-17
 
 ## Reference
 
