@@ -2,4 +2,4 @@
 
 > [github](https://github.com/daje0601/AllinOne_LLM)
 
-- [ ] 2026-02-16 ~ ing
+- [x] 2026-02-16 ~ 2026-03-17
