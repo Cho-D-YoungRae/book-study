@@ -3,4 +3,4 @@
 > [github](https://github.com/ai-agent-kr/Modern-AI-Agents)  
 > [원서 github](https://github.com/PacktPublishing/Modern-AI-Agents)
 
-- [ ] 2026-01-23 ~ ing
+- [x] 2026-01-23 ~ 2026-03-19 -> 빠르게 훑어봄. 어려워서 다음에는 진득하게 정독 필요함.
