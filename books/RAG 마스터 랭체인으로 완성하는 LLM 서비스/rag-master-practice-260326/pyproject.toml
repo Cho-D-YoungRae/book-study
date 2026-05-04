@@ -5,11 +5,16 @@ description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
     "ipykernel>=7.2.0",
+    "langchain>=1.2.17",
     "langchain-chroma>=1.1.0",
     "langchain-community>=0.4.1",
     "langchain-core>=1.2.22",
+    "langchain-huggingface>=1.2.2",
     "langchain-openai>=1.1.12",
     "langsmith>=0.7.22",
     "openai>=2.30.0",
+    "pandas>=3.0.2",
     "python-dotenv>=1.2.2",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=5.4.1",
 ]
