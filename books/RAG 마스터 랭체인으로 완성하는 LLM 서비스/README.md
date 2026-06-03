@@ -3,4 +3,4 @@
 > [github](https://github.com/langchain-kr/langchain-tutorial)
 
 - [x] 2025-11-22 ~ 2025-12-27
-- [x] 2026-03-25 ~
+- [x] 2026-03-25 ~ 2026-06-03
