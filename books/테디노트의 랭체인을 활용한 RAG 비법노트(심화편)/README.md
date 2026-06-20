@@ -2,4 +2,4 @@
 
 > [github](https://github.com/teddylee777/langchain-kr)
 
-- [ ] 2026-06-14 ~ ing
+- [x] 2026-06-14 ~ 2026-06-20
