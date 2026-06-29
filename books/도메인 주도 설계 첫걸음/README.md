@@ -2,4 +2,4 @@
 
 > [github](https://github.com/wikibook/ddd)
 
-- [ ] 2026-06-19 ~ ing
+- [x] 2026-06-19 ~ 2026-06-29
